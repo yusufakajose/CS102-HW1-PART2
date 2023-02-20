@@ -20,6 +20,25 @@ public class githubassignment {
 
         return minElement;
     }
+    
+     public static void calcAvgDiff(int[] arr) {
+        int sum = 0;
+        int[] avgDifference = new int[arr.length];
+
+        for (int i = 0; i < arr.length; i++) {
+            sum += arr[i];
+        }
+
+        int average = (sum / arr.length);
+
+        for (int i = 0; i < arr.length; i++) {
+            avgDifference[i] = (average - arr[i]);
+        }
+
+        System.out.println("\n" + "The average of the array is " + average + "\n");
+
+        System.out.println(Arrays.toString(avgDifference));
+    }
     public static void main(String[] args) {
 
         String menu = "********************MAIN MENU*********************" + '\n'
