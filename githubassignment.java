@@ -39,6 +39,18 @@ public class githubassignment {
 
         System.out.println(Arrays.toString(avgDifference));
     }
+    
+    public static int sumOddIndex(int[] array) {
+        int sumOdd = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (i % 2 == 1) {
+                sumOdd = sumOdd + array[i];
+            }
+        }
+
+        return sumOdd;
+    }
+    
     public static int sumEvenIndex(int[] array) {
         int sumEven = 0;
         for (int i = 0; i < array.length; i++) {
