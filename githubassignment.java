@@ -1,6 +1,25 @@
 import java.util.*;
 
 public class githubassignment {
+    public static int maxElement(int[] arr) {
+    int maxElement = arr[0];
+
+    for (int i = 1; i < arr.length; i++)
+        if (arr[i] > maxElement)
+            maxElement = arr[i];
+
+    return maxElement;
+    }
+
+    public static int minElement(int[] arr) {
+        int minElement = arr[0];
+
+        for (int i = 1; i < arr.length; i++)
+            if (arr[i] < minElement)
+                minElement = arr[i];
+
+        return minElement;
+    }
     public static void main(String[] args) {
 
         String menu = "********************MAIN MENU*********************" + '\n'
