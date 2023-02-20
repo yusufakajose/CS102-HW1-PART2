@@ -10,7 +10,7 @@ public class githubassignment {
 
     return maxElement;
     }
-
+    
     public static int minElement(int[] arr) {
         int minElement = arr[0];
 
@@ -38,6 +38,15 @@ public class githubassignment {
         System.out.println("\n" + "The average of the array is " + average + "\n");
 
         System.out.println(Arrays.toString(avgDifference));
+    }
+    public static int sumEvenIndex(int[] array) {
+        int sumEven = 0;
+        for (int i = 0; i < array.length; i++) {
+            if (i % 2 == 0) {
+                sumEven = sumEven + array[i];
+            }
+        }
+        return sumEven;
     }
     public static void main(String[] args) {
 
